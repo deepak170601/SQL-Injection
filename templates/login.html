@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Side-by-Side Containers Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+        /* Style for the left container */
+        .left-container {
+            /*background-image: url('BG1.jpg');
+            /* Replace with your own image URL */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            left: 60px !important;
+            align-items: center !important;
+            top: 47px !important;
+           /* border-right: 2px solid #ccc;
+            /* Add border to right side of container 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Add shadow effect */
+        }
+
+        /* Style for the right container */
+        .right-container {
+            padding: 50px;
+            border-left: 2px solid #565353;
+            /* Add border to left side of container */
+            box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Add shadow effect */
+            height: 400px !important;
+            max-width: 500px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+.form-group{
+    font-family: 'Quicksand', serif;
+}
+h2{
+    font-family: 'Quicksand', serif;
+}
+        /* Style for the main container */
+        .container-fluid {
+            background-color: #ffffff;
+            /* Add background color */
+            height: 100vh;
+        }
+
+        /* Style for the row */
+        .row {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style for the columns */
+        .col-md-6 {
+            height: 63%;
+        }
+        .img-fluid{
+            width: 600px;
+            height: 450px;
+           
+            left: 50px !important;
+        }
+       .btn{
+        background-color: #af1784;
+        font-family: 'Quicksand', serif;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px rgba(255, 0, 225, 0.3);
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 left-container">
+                <img src="{{url_for('static', filename='secure.jpg')}}" alt="Placeholder Image" class="img-fluid">
+                
+            </div>
+            <div class="col-md-6 right-container">
+                <h2>Login</h2>
+                <form method="post" action="/login" >
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                            placeholder="Enter email" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Coding/Appointment_Portal"
+		}
+	],
+	"settings": {
+		"dart.flutterHotReloadOnSave": "manual",
+		"dart.hotReloadOnSave": "never",
+		"files.autoSave": "afterDelay",
+		"editor.tabCompletion": "on",
+		"diffEditor.codeLens": true
+	}
+}

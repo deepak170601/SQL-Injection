@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    body {
+  background-color: #f8f9fa;
+   }  
+   .container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 28px;
+}
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+select {
+  height: 40px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+
+    </style>
+</head>
+<body >
+    <pre>
+
+    </pre>
+    <div class="container">
+        <h2>Enter Student Details</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" class="form-control" id="first_name" name="first" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" class="form-control" id="last_name" name="last" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="male">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="female">Female
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="other">Other
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" class="form-control" id="dob">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <select name="branch" class="form-control" id="branch">
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>ME</option>
+                    <option>CE</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="roll_no">Roll Number:</label>
+                <input type="text" class="form-control" id="roll_no" name="roll" placeholder="Enter Roll Number">
+            </div>
+            <div class="form-group">
+                <label for="cgpa">CGPA:</label>
+                <input type="text" class="form-control" id="cgpa" name="cgpa" placeholder="Enter CGPA">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+</body>
+
+
+
+
